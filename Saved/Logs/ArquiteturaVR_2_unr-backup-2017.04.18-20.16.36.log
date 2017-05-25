@@ -1,0 +1,719 @@
+﻿Log file open, 04/04/17 03:15:20
+LogInit:Display: Running engine for game: ArquiteturaVR_2_unr
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-272518186) SRandInit(-272518186).
+LogTaskGraph: Started task graph with 5 named threads and 6 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.053545
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.15-CL-3299760
+LogInit: Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Compatible Engine Version: 4.15.0-3299760+++UE4+Release-4.15
+LogInit: Net CL: 3299760
+LogDevObjectVersion: Number of dev versions registered: 14
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 8
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 14
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 22
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 12
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 3
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogInit: Compiled (64-bit): Feb 14 2017 02:04:14
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.15
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.15/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.04.04-06.15.22:010][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.04-06.15.22:010][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.04-06.15.22:018][  0]LogInit: Computer: ADELLIA
+[2017.04.04-06.15.22:018][  0]LogInit: User: ENTJ
+[2017.04.04-06.15.22:018][  0]LogInit: CPU Page size=65536, Cores=2
+[2017.04.04-06.15.22:018][  0]LogInit: High frequency timer resolution =2.533200 MHz
+[2017.04.04-06.15.22:018][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2017.04.04-06.15.22:018][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.04-06.15.22:018][  0]LogMemory: Process Physical Memory: 260.49 MB used, 260.49 MB peak
+[2017.04.04-06.15.22:018][  0]LogMemory: Process Virtual Memory: 261.71 MB used, 261.71 MB peak
+[2017.04.04-06.15.22:018][  0]LogMemory: Physical Memory: 3973.52 MB used,  12291.44 MB free, 16264.96 MB total
+[2017.04.04-06.15.22:018][  0]LogMemory: Virtual Memory: 618.28 MB used,  12291.44 MB free, 134217728.00 MB total
+[2017.04.04-06.15.22:082][  0]LogInit: Overriding culture en with editor configuration.
+[2017.04.04-06.15.22:806][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.04-06.15.22:885][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics Family' (Feature Level 11_0)
+[2017.04.04-06.15.22:885][  0]LogD3D11RHI:       160/0/1760 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2017.04.04-06.15.23:493][  0]LogD3D11RHI:    1. 'AMD Radeon R7 M265' (Feature Level 11_0)
+[2017.04.04-06.15.23:493][  0]LogD3D11RHI:       2030/0/7936 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1002
+[2017.04.04-06.15.23:494][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.04-06.15.23:494][  0]LogD3D11RHI:       0/0/256 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.04-06.15.23:494][  0]LogD3D11RHI: Chosen D3D11 Adapter: 1
+[2017.04.04-06.15.23:497][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.04-06.15.23:497][  0]LogD3D11RHI:     GPU DeviceId: 0x6900 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.04-06.15.23:497][  0]LogWindows: EnumDisplayDevices:
+[2017.04.04-06.15.23:497][  0]LogWindows:    0. 'Intel(R) HD Graphics Family' (P:1 D:1)
+[2017.04.04-06.15.23:497][  0]LogWindows:    1. 'Intel(R) HD Graphics Family' (P:0 D:0)
+[2017.04.04-06.15.23:498][  0]LogWindows:    2. 'Intel(R) HD Graphics Family' (P:0 D:0)
+[2017.04.04-06.15.23:498][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2017.04.04-06.15.23:498][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R7 M265
+[2017.04.04-06.15.23:498][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2017.04.04-06.15.23:498][  0]LogD3D11RHI:      Driver Date: Unknown
+[2017.04.04-06.15.23:498][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.04-06.15.23:509][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.04-06.15.23:521][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2017.04.04-06.15.23:521][  0]LogShaderCompilers: Guid format shader working directory is -27 characters bigger than the processId version (../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Intermediate/Shaders/WorkingDirectory/3888/).
+[2017.04.04-06.15.23:521][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/ENTJ/AppData/Local/Temp/UnrealShaderWorkingDir/77355B784AEC1089A23726AB6879A2FD/'.
+[2017.04.04-06.15.23:521][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.04-06.15.24:716][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.04-06.15.24:769][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.04-06.15.24:820][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.04-06.15.24:872][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.04-06.15.24:927][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.04-06.15.24:978][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.04-06.15.25:027][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.04-06.15.25:077][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.04-06.15.25:117][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.04-06.15.25:169][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.04-06.15.25:219][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.04-06.15.25:268][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.04-06.15.25:326][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.04-06.15.25:411][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.04-06.15.25:460][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.04-06.15.25:508][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.04-06.15.25:556][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.04-06.15.25:585][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.04-06.15.25:676][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.04-06.15.25:710][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.04-06.15.25:759][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.04-06.15.25:806][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.04-06.15.25:853][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.04-06.15.25:920][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.04-06.15.25:920][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.04-06.15.26:458][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.04-06.15.26:538][  0]LogDerivedDataCache: Loaded boot cache 0.08s 60MB C:/Users/ENTJ/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.04-06.15.26:538][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/ENTJ/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc
+[2017.04.04-06.15.26:538][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.04-06.15.26:538][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.04-06.15.26:538][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.04-06.15.26:538][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.04-06.15.26:568][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.04-06.15.26:580][  0]LogDerivedDataCache: Using Local data cache path C:/Users/ENTJ/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.04-06.15.26:593][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.04-06.15.26:594][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.04-06.15.26:594][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.04-06.15.26:957][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.04-06.15.26:960][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.04-06.15.27:248][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.04-06.15.27:298][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.04-06.15.27:352][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.04-06.15.27:352][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.04-06.15.27:352][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.04-06.15.27:942][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3299760, ProjectName: arquiteturavr_2_unr, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 55255392
+[2017.04.04-06.15.27:985][  0]LogAssetRegistry: FAssetRegistry took 0.0217 seconds to start up
+[2017.04.04-06.15.28:028][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 1 prioritized culture(s) in 0.014671 seconds
+[2017.04.04-06.15.28:034][  0]LogUObjectArray: 32475 objects as part of root set at end of initial load.
+[2017.04.04-06.15.28:034][  0]LogUObjectAllocator: 7073360 out of 0 bytes used by permanent object pool.
+[2017.04.04-06.15.28:034][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.04-06.15.28:087][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.04-06.15.29:478][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.04-06.15.29:513][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.04-06.15.29:891][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.04-06.15.30:210][  0]SourceControl: Info Source control is disabled
+[2017.04.04-06.15.30:210][  0]SourceControl: Info Source control is disabled
+[2017.04.04-06.15.30:246][  0]SourceControl: Info Source control is disabled
+[2017.04.04-06.15.30:281][  0]SourceControl: Info Source control is disabled
+[2017.04.04-06.15.31:285][  0]LogEngine: Initializing Engine...
+[2017.04.04-06.15.31:286][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.04.04-06.15.31:497][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.04-06.15.31:502][  0]LogInit: XAudio2 using 'Fones de ouvido/Alto falantes (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.04-06.15.31:511][  0]LogInit: FAudioDevice initialized.
+[2017.04.04-06.15.31:539][  0]LogDerivedDataCache: Saved boot cache 0.03s 60MB C:/Users/ENTJ/AppData/Local/UnrealEngine/4.15/DerivedDataCache/Boot.ddc.
+[2017.04.04-06.15.31:546][  0]LogInit: Texture streaming: Enabled
+[2017.04.04-06.15.31:626][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.04.04-06.15.31:702][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.04-06.15.31:702][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.04-06.15.31:711][  0]LogInit: Transaction tracking system initialized
+[2017.04.04-06.15.31:987][  0]BlueprintLog: New page: Editor Load
+[2017.04.04-06.15.32:708][  0]LocalizationService: Info Localization service is disabled
+[2017.04.04-06.15.33:514][  0]LogConsoleResponse:Display: 
+[2017.04.04-06.15.33:648][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.04-06.15.33:648][  0]LogCook:Display: Mobile HDR setting 0
+[2017.04.04-06.15.34:445][  0]LogFileCache: Scanning file cache for directory 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/' took 0.01s
+[2017.04.04-06.15.34:481][  0]SourceControl: Info Source control is disabled
+[2017.04.04-06.15.34:481][  0]Cmd: MAP LOAD FILE="../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/ArquiteturaVR_2_map.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.04-06.15.34:482][  0]LightingResults: New page: Lighting Build
+[2017.04.04-06.15.34:515][  0]MapCheck: New page: Map Check
+[2017.04.04-06.15.34:515][  0]LightingResults: New page: Lighting Build
+[2017.04.04-06.15.35:043][  0]LogAIModule: Creating AISystem for world ArquiteturaVR_2_map
+[2017.04.04-06.15.35:050][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.04-06.15.35:051][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.04-06.15.35:112][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 61.363ms to complete.
+[2017.04.04-06.15.35:112][  0]LogFileHelpers: Loading map 'ArquiteturaVR_2_map' took 0.632
+[2017.04.04-06.15.35:346][  0]LogCollectionManager: Loaded 0 collections in 0.001459 seconds
+[2017.04.04-06.15.35:431][  0]LogFileCache: Scanning file cache for directory 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Collections/' took 0.01s
+[2017.04.04-06.15.35:431][  0]LogFileCache: Scanning file cache for directory 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/Developers/ENTJ/Collections/' took 0.01s
+[2017.04.04-06.15.35:431][  0]LogFileCache: Scanning file cache for directory 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/Collections/' took 0.01s
+[2017.04.04-06.15.35:431][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2017.04.04-06.15.35:440][  0]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2245 classes and 452 folders.
+[2017.04.04-06.15.35:444][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.04-06.15.35:444][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.04-06.15.35:495][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0005 seconds. Added 0 classes and 0 folders.
+[2017.04.04-06.15.35:528][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2017.04.04-06.15.35:627][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.04-06.15.35:633][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.04-06.15.35:706][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2017.04.04-06.15.35:706][  0]LogLoad: (Engine Initialization) Total time: 15.39 seconds
+[2017.04.04-06.15.35:706][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.04 seconds
+[2017.04.04-06.15.35:706][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.04-06.15.35:706][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.04-06.15.35:725][  0]LogOcInput: OculusInput pre-init called
+[2017.04.04-06.15.35:747][  0]LogContentStreaming: Texture pool size now 3000 MB
+[2017.04.04-06.15.35:748][  0]LogSlate: Took 0.000196 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.04-06.15.35:755][  0]LogSlate: Took 0.000223 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.04.04-06.15.35:757][  0]LogSlate: Took 0.000188 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.04.04-06.15.35:933][  0]LogRenderer: Reallocating scene render targets to support 1224x612 NumSamples 1 (Frame:2).
+[2017.04.04-06.15.35:974][  0]LogSlate: Took 0.000313 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.04-06.15.36:242][  1]LogAssetRegistry: Asset discovery search completed in 8.2795 seconds
+[2017.04.04-06.15.36:242][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000005 seconds (found 0 objects)
+[2017.04.04-06.15.36:242][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000020 seconds (updated 0 objects)
+[2017.04.04-06.16.20:180][629]LogSlate: Took 0.000134 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.04-06.16.20:302][629]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 ../../../../../../A/unreal/_PROJETOS/_HDR/06-07_Day_H.hdr)
+[2017.04.04-06.16.20:588][629]LogTexture:Display: Building textures: 06-07_Day_H (RGBA16F)
+[2017.04.04-06.16.46:272][801]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2017.04.04-06.16.51:133][ 73]LogSlate: Took 0.000162 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.04.04-06.17.54:760][779]LogSavePackage: Save=73.51ms
+[2017.04.04-06.17.54:760][779]LogSavePackage: Moving '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/ArquiteturaVR_2_mapC809CA0E49E1E36308B1F194A8EE2D81.tmp' to '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/ArquiteturaVR_2_map.umap'
+[2017.04.04-06.17.54:762][779]LogSavePackage:Display: Finished SavePackage ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/ArquiteturaVR_2_map.umap
+[2017.04.04-06.17.54:780][779]LogFileHelpers: Saving map 'ArquiteturaVR_2_map' took 0.172
+[2017.04.04-06.17.54:797][779]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/texturas/06-07_Day_H" FILE="../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/texturas/06-07_Day_H.uasset" SILENT=true
+[2017.04.04-06.17.56:654][779]LogSavePackage: Save=1855.44ms
+[2017.04.04-06.17.56:654][779]LogSavePackage: Moving '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/06-07_Day_H2E76387E478EA48EE549B381DBAFB8F2.tmp' to '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/texturas/06-07_Day_H.uasset'
+[2017.04.04-06.17.56:656][779]LogSavePackage:Display: Finished SavePackage ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/texturas/06-07_Day_H.uasset
+[2017.04.04-06.17.56:657][779]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.04.04-06.18.07:479][302]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CAsaVERNA_parede_oeste_frente)
+[2017.04.04-06.18.19:330][919]LogSlate: Took 0.000253 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.04.04-06.18.29:653][155]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CAsaVERNA_parede_oeste_fundo)
+[2017.04.04-06.18.35:188][273]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CAsaVERNA_piso)
+[2017.04.04-06.18.43:790][408]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CAsaVERNA_piso_quintal)
+[2017.04.04-06.19.46:466][769]LogSavePackage: Save=73.17ms
+[2017.04.04-06.19.46:466][769]LogSavePackage: Moving '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/ArquiteturaVR_2_mapBE3285E2459C3D5615F64787AAFF6A17.tmp' to '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/ArquiteturaVR_2_map.umap'
+[2017.04.04-06.19.46:468][769]LogSavePackage:Display: Finished SavePackage ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/ArquiteturaVR_2_map.umap
+[2017.04.04-06.19.46:483][769]LogFileHelpers: Saving map 'ArquiteturaVR_2_map' took 0.168
+[2017.04.04-06.19.55:548][300]MapCheck: New page: Map Check
+[2017.04.04-06.19.55:588][300]Cmd: MAP REBUILD ALLVISIBLE
+[2017.04.04-06.19.55:588][300]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2017.04.04-06.19.55:744][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy WorldGridMaterial, compiling. Is special engine material.
+[2017.04.04-06.19.55:745][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E1C3580 with Material 0x0000005D45233100 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:749][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy WorldGridMaterial, GameThreadShaderMap 0x0000005D1E1C3580
+[2017.04.04-06.19.55:752][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_parede_cinza, compiling. 
+[2017.04.04-06.19.55:752][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E167900 with Material 0x0000005D45232B00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:755][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_parede_cinza, GameThreadShaderMap 0x0000005D1E167900
+[2017.04.04-06.19.55:757][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Concrete_Panels, compiling. 
+[2017.04.04-06.19.55:758][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E167200 with Material 0x0000005D45232E00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:762][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy M_Concrete_Panels, GameThreadShaderMap 0x0000005D1E167200
+[2017.04.04-06.19.55:765][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_esquadrias, compiling. 
+[2017.04.04-06.19.55:766][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E166B00 with Material 0x0000005D45231F00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:768][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_esquadrias, GameThreadShaderMap 0x0000005D1E166B00
+[2017.04.04-06.19.55:772][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Wood_Oak_b, compiling. 
+[2017.04.04-06.19.55:773][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E165D00 with Material 0x0000005D45231600 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:777][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy M_Wood_Oak_b, GameThreadShaderMap 0x0000005D1E165D00
+[2017.04.04-06.19.55:782][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m1_vidro_fundo, compiling. 
+[2017.04.04-06.19.55:784][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E165600 with Material 0x0000005D45230700 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:788][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m1_vidro_fundo, GameThreadShaderMap 0x0000005D1E165600
+[2017.04.04-06.19.55:792][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_CÉU, compiling. 
+[2017.04.04-06.19.55:793][300]LogTemp:Display: Added material ShaderMap 0x0000005D188AF900 with Material 0x0000005D45230400 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:796][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_CÉU, GameThreadShaderMap 0x0000005D188AF900
+[2017.04.04-06.19.55:800][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m0_TEXTURA, compiling. 
+[2017.04.04-06.19.55:802][300]LogTemp:Display: Added material ShaderMap 0x0000005D188AF200 with Material 0x0000005D188A7D00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:805][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m0_TEXTURA, GameThreadShaderMap 0x0000005D188AF200
+[2017.04.04-06.19.55:809][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m1_azul-claro, compiling. 
+[2017.04.04-06.19.55:811][300]LogTemp:Display: Added material ShaderMap 0x0000005D188AE780 with Material 0x0000005D188A7A00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:814][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m1_azul-claro, GameThreadShaderMap 0x0000005D188AE780
+[2017.04.04-06.19.55:818][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_aco-escovado, compiling. 
+[2017.04.04-06.19.55:820][300]LogTemp:Display: Added material ShaderMap 0x0000005D188AD980 with Material 0x0000005D188A7100 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:823][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_aco-escovado, GameThreadShaderMap 0x0000005D188AD980
+[2017.04.04-06.19.55:828][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m1_dourado, compiling. 
+[2017.04.04-06.19.55:829][300]LogTemp:Display: Added material ShaderMap 0x0000005D188ACF00 with Material 0x0000005D188A6B00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:832][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m1_dourado, GameThreadShaderMap 0x0000005D188ACF00
+[2017.04.04-06.19.55:836][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_QUADRO_COSSACOS, compiling. 
+[2017.04.04-06.19.55:838][300]LogTemp:Display: Added material ShaderMap 0x0000005D18857900 with Material 0x0000005D188A6800 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:841][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_QUADRO_COSSACOS, GameThreadShaderMap 0x0000005D18857900
+[2017.04.04-06.19.55:844][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m1_sofa-baixo, compiling. 
+[2017.04.04-06.19.55:845][300]LogTemp:Display: Added material ShaderMap 0x0000005D18857200 with Material 0x0000005D188A5F00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:847][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m1_sofa-baixo, GameThreadShaderMap 0x0000005D18857200
+[2017.04.04-06.19.55:851][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_sofa_faixa_escura, compiling. 
+[2017.04.04-06.19.55:853][300]LogTemp:Display: Added material ShaderMap 0x0000005D18856780 with Material 0x0000005D188A5900 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:857][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_sofa_faixa_escura, GameThreadShaderMap 0x0000005D18856780
+[2017.04.04-06.19.55:862][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Wood_Walnut, compiling. 
+[2017.04.04-06.19.55:863][300]LogTemp:Display: Added material ShaderMap 0x0000005D18855980 with Material 0x0000005D188A5600 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:867][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy M_Wood_Walnut, GameThreadShaderMap 0x0000005D18855980
+[2017.04.04-06.19.55:871][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy M_Rock_Basalt, compiling. 
+[2017.04.04-06.19.55:873][300]LogTemp:Display: Added material ShaderMap 0x0000005D18854F00 with Material 0x0000005D188A4D00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:877][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy M_Rock_Basalt, GameThreadShaderMap 0x0000005D18854F00
+[2017.04.04-06.19.55:881][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_CAVEIRA_Inst, compiling. 
+[2017.04.04-06.19.55:883][300]LogTemp:Display: Added material ShaderMap 0x0000005D18854480 with Material 0x0000005D188A4A00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:886][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_CAVEIRA_Inst, GameThreadShaderMap 0x0000005D18854480
+[2017.04.04-06.19.55:891][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_livro_MOI-MIR_Inst, compiling. 
+[2017.04.04-06.19.55:892][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E09F580 with Material 0x0000005D1E093A00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:896][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_livro_MOI-MIR_Inst, GameThreadShaderMap 0x0000005D1E09F580
+[2017.04.04-06.19.55:900][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_MADEIRA_normalFromHeight, compiling. 
+[2017.04.04-06.19.55:902][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E09EB00 with Material 0x0000005D1E093700 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:906][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_MADEIRA_normalFromHeight, GameThreadShaderMap 0x0000005D1E09EB00
+[2017.04.04-06.19.55:911][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_Wood_Oak_BRILHOSAUM, compiling. 
+[2017.04.04-06.19.55:912][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E09E080 with Material 0x0000005D1E093100 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:915][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_Wood_Oak_BRILHOSAUM, GameThreadShaderMap 0x0000005D1E09E080
+[2017.04.04-06.19.55:920][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_HARPA_Wood_Floor_Walnut_Polished_Inst, compiling. 
+[2017.04.04-06.19.55:921][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E09DD00 with Material 0x0000005D1E092B00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:925][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_HARPA_Wood_Floor_Walnut_Polished_Inst, GameThreadShaderMap 0x0000005D1E09DD00
+[2017.04.04-06.19.55:929][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_METAL, compiling. 
+[2017.04.04-06.19.55:930][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E09CB80 with Material 0x0000005D1E092500 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:934][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_METAL, GameThreadShaderMap 0x0000005D1E09CB80
+[2017.04.04-06.19.55:938][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_Metal_Burnished_Steel, compiling. 
+[2017.04.04-06.19.55:940][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E033C80 with Material 0x0000005D1E091F00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:943][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_Metal_Burnished_Steel, GameThreadShaderMap 0x0000005D1E033C80
+[2017.04.04-06.19.55:948][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_sofa_kensington_PEZINHOS, compiling. 
+[2017.04.04-06.19.55:949][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E033200 with Material 0x0000005D1E091900 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:953][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_sofa_kensington_PEZINHOS, GameThreadShaderMap 0x0000005D1E033200
+[2017.04.04-06.19.55:957][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_Esquadrias_Negras, compiling. 
+[2017.04.04-06.19.55:959][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E032780 with Material 0x0000005D1E091000 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:962][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_Esquadrias_Negras, GameThreadShaderMap 0x0000005D1E032780
+[2017.04.04-06.19.55:966][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_FOTOS_parede, compiling. 
+[2017.04.04-06.19.55:968][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E031D00 with Material 0x0000005D1E090700 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:972][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_FOTOS_parede, GameThreadShaderMap 0x0000005D1E031D00
+[2017.04.04-06.19.55:977][300]LogMaterial: Missing cached shader map for material FDebugViewModeMaterialProxy m_TAPETE-CHINES-Inst, compiling. 
+[2017.04.04-06.19.55:978][300]LogTemp:Display: Added material ShaderMap 0x0000005D1E031280 with Material 0x0000005D1DFDFA00 to ShaderMapsBeingCompiled
+[2017.04.04-06.19.55:981][300]LogTemp:Display: Kicking off shader compilation for FDebugViewModeMaterialProxy m_TAPETE-CHINES-Inst, GameThreadShaderMap 0x0000005D1E031280
+[2017.04.04-06.19.56:195][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E167900
+[2017.04.04-06.19.56:195][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_parede_cinza complete, GameThreadShaderMap 0x0000005D1E167900, marking material FDebugViewModeMaterialProxy m_parede_cinza as finished
+[2017.04.04-06.19.56:195][300]LogTemp:Display: Marking material as finished 0x0000005D45232B00
+[2017.04.04-06.19.56:342][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E166B00
+[2017.04.04-06.19.56:342][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_esquadrias complete, GameThreadShaderMap 0x0000005D1E166B00, marking material FDebugViewModeMaterialProxy m_esquadrias as finished
+[2017.04.04-06.19.56:342][300]LogTemp:Display: Marking material as finished 0x0000005D45231F00
+[2017.04.04-06.19.56:356][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E167200
+[2017.04.04-06.19.56:356][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy M_Concrete_Panels complete, GameThreadShaderMap 0x0000005D1E167200, marking material FDebugViewModeMaterialProxy M_Concrete_Panels as finished
+[2017.04.04-06.19.56:356][300]LogTemp:Display: Marking material as finished 0x0000005D45232E00
+[2017.04.04-06.19.56:383][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E1C3580
+[2017.04.04-06.19.56:383][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy WorldGridMaterial complete, GameThreadShaderMap 0x0000005D1E1C3580, marking material FDebugViewModeMaterialProxy WorldGridMaterial as finished
+[2017.04.04-06.19.56:383][300]LogTemp:Display: Marking material as finished 0x0000005D45233100
+[2017.04.04-06.19.56:509][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E165600
+[2017.04.04-06.19.56:509][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m1_vidro_fundo complete, GameThreadShaderMap 0x0000005D1E165600, marking material FDebugViewModeMaterialProxy m1_vidro_fundo as finished
+[2017.04.04-06.19.56:509][300]LogTemp:Display: Marking material as finished 0x0000005D45230700
+[2017.04.04-06.19.56:592][300]LogTemp:Display: Finished compile of shader map 0x0000005D188AF900
+[2017.04.04-06.19.56:592][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_CÉU complete, GameThreadShaderMap 0x0000005D188AF900, marking material FDebugViewModeMaterialProxy m_CÉU as finished
+[2017.04.04-06.19.56:592][300]LogTemp:Display: Marking material as finished 0x0000005D45230400
+[2017.04.04-06.19.56:629][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E165D00
+[2017.04.04-06.19.56:629][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy M_Wood_Oak_b complete, GameThreadShaderMap 0x0000005D1E165D00, marking material FDebugViewModeMaterialProxy M_Wood_Oak_b as finished
+[2017.04.04-06.19.56:629][300]LogTemp:Display: Marking material as finished 0x0000005D45231600
+[2017.04.04-06.19.56:745][300]LogTemp:Display: Finished compile of shader map 0x0000005D188AF200
+[2017.04.04-06.19.56:745][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m0_TEXTURA complete, GameThreadShaderMap 0x0000005D188AF200, marking material FDebugViewModeMaterialProxy m0_TEXTURA as finished
+[2017.04.04-06.19.56:745][300]LogTemp:Display: Marking material as finished 0x0000005D188A7D00
+[2017.04.04-06.19.56:759][300]LogTemp:Display: Finished compile of shader map 0x0000005D188AE780
+[2017.04.04-06.19.56:759][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m1_azul-claro complete, GameThreadShaderMap 0x0000005D188AE780, marking material FDebugViewModeMaterialProxy m1_azul-claro as finished
+[2017.04.04-06.19.56:759][300]LogTemp:Display: Marking material as finished 0x0000005D188A7A00
+[2017.04.04-06.19.56:929][300]LogTemp:Display: Finished compile of shader map 0x0000005D188AD980
+[2017.04.04-06.19.56:929][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_aco-escovado complete, GameThreadShaderMap 0x0000005D188AD980, marking material FDebugViewModeMaterialProxy m_aco-escovado as finished
+[2017.04.04-06.19.56:929][300]LogTemp:Display: Marking material as finished 0x0000005D188A7100
+[2017.04.04-06.19.56:945][300]LogTemp:Display: Finished compile of shader map 0x0000005D188ACF00
+[2017.04.04-06.19.56:945][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m1_dourado complete, GameThreadShaderMap 0x0000005D188ACF00, marking material FDebugViewModeMaterialProxy m1_dourado as finished
+[2017.04.04-06.19.56:945][300]LogTemp:Display: Marking material as finished 0x0000005D188A6B00
+[2017.04.04-06.19.57:037][300]LogTemp:Display: Finished compile of shader map 0x0000005D18857900
+[2017.04.04-06.19.57:037][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_QUADRO_COSSACOS complete, GameThreadShaderMap 0x0000005D18857900, marking material FDebugViewModeMaterialProxy m_QUADRO_COSSACOS as finished
+[2017.04.04-06.19.57:037][300]LogTemp:Display: Marking material as finished 0x0000005D188A6800
+[2017.04.04-06.19.57:310][300]LogTemp:Display: Finished compile of shader map 0x0000005D18856780
+[2017.04.04-06.19.57:310][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_sofa_faixa_escura complete, GameThreadShaderMap 0x0000005D18856780, marking material FDebugViewModeMaterialProxy m_sofa_faixa_escura as finished
+[2017.04.04-06.19.57:310][300]LogTemp:Display: Marking material as finished 0x0000005D188A5900
+[2017.04.04-06.19.57:448][300]LogTemp:Display: Finished compile of shader map 0x0000005D18857200
+[2017.04.04-06.19.57:448][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m1_sofa-baixo complete, GameThreadShaderMap 0x0000005D18857200, marking material FDebugViewModeMaterialProxy m1_sofa-baixo as finished
+[2017.04.04-06.19.57:448][300]LogTemp:Display: Marking material as finished 0x0000005D188A5F00
+[2017.04.04-06.19.57:692][300]LogTemp:Display: Finished compile of shader map 0x0000005D18855980
+[2017.04.04-06.19.57:692][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy M_Wood_Walnut complete, GameThreadShaderMap 0x0000005D18855980, marking material FDebugViewModeMaterialProxy M_Wood_Walnut as finished
+[2017.04.04-06.19.57:692][300]LogTemp:Display: Marking material as finished 0x0000005D188A5600
+[2017.04.04-06.19.57:775][300]LogTemp:Display: Finished compile of shader map 0x0000005D18854480
+[2017.04.04-06.19.57:775][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_CAVEIRA_Inst complete, GameThreadShaderMap 0x0000005D18854480, marking material FDebugViewModeMaterialProxy m_CAVEIRA_Inst as finished
+[2017.04.04-06.19.57:775][300]LogTemp:Display: Marking material as finished 0x0000005D188A4A00
+[2017.04.04-06.19.57:813][300]LogTemp:Display: Finished compile of shader map 0x0000005D18854F00
+[2017.04.04-06.19.57:813][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy M_Rock_Basalt complete, GameThreadShaderMap 0x0000005D18854F00, marking material FDebugViewModeMaterialProxy M_Rock_Basalt as finished
+[2017.04.04-06.19.57:813][300]LogTemp:Display: Marking material as finished 0x0000005D188A4D00
+[2017.04.04-06.19.58:127][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E09F580
+[2017.04.04-06.19.58:128][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_livro_MOI-MIR_Inst complete, GameThreadShaderMap 0x0000005D1E09F580, marking material FDebugViewModeMaterialProxy m_livro_MOI-MIR_Inst as finished
+[2017.04.04-06.19.58:128][300]LogTemp:Display: Marking material as finished 0x0000005D1E093A00
+[2017.04.04-06.19.58:482][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E09E080
+[2017.04.04-06.19.58:482][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_Wood_Oak_BRILHOSAUM complete, GameThreadShaderMap 0x0000005D1E09E080, marking material FDebugViewModeMaterialProxy m_Wood_Oak_BRILHOSAUM as finished
+[2017.04.04-06.19.58:482][300]LogTemp:Display: Marking material as finished 0x0000005D1E093100
+[2017.04.04-06.19.58:655][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E09EB00
+[2017.04.04-06.19.58:655][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_MADEIRA_normalFromHeight complete, GameThreadShaderMap 0x0000005D1E09EB00, marking material FDebugViewModeMaterialProxy m_MADEIRA_normalFromHeight as finished
+[2017.04.04-06.19.58:655][300]LogTemp:Display: Marking material as finished 0x0000005D1E093700
+[2017.04.04-06.19.58:887][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E09CB80
+[2017.04.04-06.19.58:887][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_METAL complete, GameThreadShaderMap 0x0000005D1E09CB80, marking material FDebugViewModeMaterialProxy m_METAL as finished
+[2017.04.04-06.19.58:887][300]LogTemp:Display: Marking material as finished 0x0000005D1E092500
+[2017.04.04-06.19.58:960][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E09DD00
+[2017.04.04-06.19.58:960][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_HARPA_Wood_Floor_Walnut_Polished_Inst complete, GameThreadShaderMap 0x0000005D1E09DD00, marking material FDebugViewModeMaterialProxy m_HARPA_Wood_Floor_Walnut_Polished_Inst as finished
+[2017.04.04-06.19.58:960][300]LogTemp:Display: Marking material as finished 0x0000005D1E092B00
+[2017.04.04-06.19.59:099][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E033C80
+[2017.04.04-06.19.59:099][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_Metal_Burnished_Steel complete, GameThreadShaderMap 0x0000005D1E033C80, marking material FDebugViewModeMaterialProxy m_Metal_Burnished_Steel as finished
+[2017.04.04-06.19.59:099][300]LogTemp:Display: Marking material as finished 0x0000005D1E091F00
+[2017.04.04-06.19.59:175][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E033200
+[2017.04.04-06.19.59:175][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_sofa_kensington_PEZINHOS complete, GameThreadShaderMap 0x0000005D1E033200, marking material FDebugViewModeMaterialProxy m_sofa_kensington_PEZINHOS as finished
+[2017.04.04-06.19.59:175][300]LogTemp:Display: Marking material as finished 0x0000005D1E091900
+[2017.04.04-06.19.59:314][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E032780
+[2017.04.04-06.19.59:314][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_Esquadrias_Negras complete, GameThreadShaderMap 0x0000005D1E032780, marking material FDebugViewModeMaterialProxy m_Esquadrias_Negras as finished
+[2017.04.04-06.19.59:314][300]LogTemp:Display: Marking material as finished 0x0000005D1E091000
+[2017.04.04-06.19.59:508][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E031D00
+[2017.04.04-06.19.59:508][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_FOTOS_parede complete, GameThreadShaderMap 0x0000005D1E031D00, marking material FDebugViewModeMaterialProxy m_FOTOS_parede as finished
+[2017.04.04-06.19.59:508][300]LogTemp:Display: Marking material as finished 0x0000005D1E090700
+[2017.04.04-06.19.59:534][300]LogTemp:Display: Finished compile of shader map 0x0000005D1E031280
+[2017.04.04-06.19.59:534][300]LogTemp:Display: Shader map FDebugViewModeMaterialProxy m_TAPETE-CHINES-Inst complete, GameThreadShaderMap 0x0000005D1E031280, marking material FDebugViewModeMaterialProxy m_TAPETE-CHINES-Inst as finished
+[2017.04.04-06.19.59:534][300]LogTemp:Display: Marking material as finished 0x0000005D1DFDFA00
+[2017.04.04-06.19.59:538][300]TextureStreamingBuild:Display: Compiling optional shaders took 3.801 seconds.
+[2017.04.04-06.19.59:741][300]LogLevel:Display: Export Material TexCoord Scales took 0.203 seconds.
+[2017.04.04-06.19.59:761][300]TextureStreamingBuild:Display: Build Texture Streaming took 0.020 seconds.
+[2017.04.04-06.19.59:789][300]LightingResults: New page: Lighting Build - Apr 4, 2017, 12:19:59 AM
+[2017.04.04-06.19.59:838][300]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2017.04.04-06.19.59:871][300]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2017.04.04-06.19.59:876][300]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2017.04.04-06.20.00:386][300]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2017.04.04-06.20.00:386][300]LogSwarmInterface: [TryOpenConnection] Local Process ID is 3888
+[2017.04.04-06.20.02:584][300]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2017.04.04-06.20.02:584][300]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2017.04.04-06.20.02:584][300]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2017.04.04-06.20.02:584][300]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2017.04.04-06.20.02:584][300]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2017.04.04-06.20.02:703][300]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2017.04.04-06.20.02:704][300]MapCheck: New page: ArquiteturaVR_2_map - Apr 4, 2017, 12:20:02 AM
+[2017.04.04-06.20.02:704][300]MapCheck:Error: Error WorldSettings_1 Maps need lighting rebuilt 
+[2017.04.04-06.20.02:777][300]MapCheck: Info Map check complete: 1 Error(s), 0 Warning(s), took 73.893ms to complete.
+[2017.04.04-06.20.02:800][300]LogEditorBuildUtils: Build time 0:07
+[2017.04.04-06.29.46:602][ 49]LogSavePackage: Save=175.18ms
+[2017.04.04-06.29.46:602][ 49]LogSavePackage: Moving '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/ArquiteturaVR_2_map_Auto1C030AA66400B55EE81C6E2B3DBF6D9EB.tmp' to '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Autosaves/Game/ArquiteturaVR_2_map_Auto1.umap'
+[2017.04.04-06.29.46:604][ 49]LogSavePackage:Display: Finished SavePackage ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Autosaves/Game/ArquiteturaVR_2_map_Auto1.umap
+[2017.04.04-06.29.46:606][ 49]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ArquiteturaVR_2_map' took 0.237
+[2017.04.04-06.29.46:606][ 49]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.237
+[2017.04.04-06.37.41:856][475]LightingResults:Warning: Warning mesa-de-lado Object has overlapping UVs.
+[2017.04.04-06.37.41:856][475]LightingResults: Info mesa-de-lado Lightmap UV are overlapping by 3.4%. Please adjust content - Enable Error Coloring to visualize.
+[2017.04.04-06.38.03:872][541]Job is a success!
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: HQ_Lightmap1_1 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: HQ_Lightmap1_2 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: LQ_Lightmap_1_3 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: HQ_Lightmap1_3 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: HQ_Lightmap1_4 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: LQ_Lightmap_1_4 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: HQ_Lightmap1_5 (BGRA8)
+[2017.04.04-06.38.05:497][542]LogTexture:Display: Building textures: LQ_Lightmap_1_5 (BGRA8)
+[2017.04.04-06.38.05:525][542]Lightmass on ADELLIA: 18:01 min total, 409 ms importing, 98 ms setup, 26.9 sec photons, 17:34 min processing, 0 ms extra exporting [47/47 mappings]. Threads: 1:10:17 hours total, 52:28 min processing.
+[2017.04.04-06.38.05:559][542]LogStaticLightingSystem: Illumination: 18:05 min (840 ms encoding lightmaps, 0 ms encoding shadowmaps)
+[2017.04.04-06.38.05:559][542]LogStaticLightingSystem: Lightmap texture memory:  64.7 MB (64.7 MB streaming, 0.0 MB non-streaming), 10 textures
+[2017.04.04-06.38.05:559][542]LogStaticLightingSystem: Shadowmap texture memory: 0.0 MB (0.0 MB streaming, 0.0 MB non-streaming), 0 textures
+[2017.04.04-06.38.06:421][542]DumpUnbuiltLightIteractions
+[2017.04.04-06.38.06:421][542]Lights with unbuilt interactions: 0
+[2017.04.04-06.38.06:421][542]
+[2017.04.04-06.38.06:421][542]Primitives with unbuilt interactions: 0
+[2017.04.04-06.38.06:436][543]Cmd: MAP CHECK NOTIFYRESULTS
+[2017.04.04-06.38.06:436][543]MapCheck: New page: ArquiteturaVR_2_map - Apr 4, 2017, 12:38:06 AM
+[2017.04.04-06.38.06:497][543]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 60.968ms to complete.
+[2017.04.04-06.39.51:050][851]LogSavePackage: Save=1571.56ms
+[2017.04.04-06.39.51:050][851]LogSavePackage: Moving '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/ArquiteturaVR_2_map_Auto2A2E1A6AD4A6A0B7DEC90FCBD3D02C0AA.tmp' to '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Autosaves/Game/ArquiteturaVR_2_map_Auto2.umap'
+[2017.04.04-06.39.51:052][851]LogSavePackage:Display: Finished SavePackage ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Autosaves/Game/ArquiteturaVR_2_map_Auto2.umap
+[2017.04.04-06.39.51:054][851]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ArquiteturaVR_2_map' took 1.612
+[2017.04.04-06.39.51:054][851]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 1.612
+[2017.04.04-06.39.51:056][851]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/ArquiteturaVR_2_map_BuiltData] ([1] browsable assets)...
+[2017.04.04-06.39.51:056][851]OBJ SavePackage: Finished generating thumbnails for package [/Game/ArquiteturaVR_2_map_BuiltData]
+[2017.04.04-06.39.51:112][851]LogSavePackage: Save=35.08ms
+[2017.04.04-06.39.51:112][851]LogSavePackage: Moving '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/ArquiteturaVR_2_map_BuiltData_Auto205D0145D41B8BDE81A7AD1AF6EEB2994.tmp' to '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Autosaves/Game/ArquiteturaVR_2_map_BuiltData_Auto2.uasset'
+[2017.04.04-06.39.51:118][851]LogSavePackage:Display: Finished SavePackage ../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Autosaves/Game/ArquiteturaVR_2_map_BuiltData_Auto2.uasset
+[2017.04.04-06.39.51:118][851]LogFileHelpers: Auto-saving content packages took 0.063
+[2017.04.04-06.45.52:187][245]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CAsaVERNA_piso)
+[2017.04.04-06.46.06:725][ 87]LogEditorViewport: Clicking on Actor (LMB): SkyLight (SkyLight)
+[2017.04.04-06.46.52:876][296]Cmd: QUIT_EDITOR
+[2017.04.04-06.46.52:926][296]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.04-06.46.52:926][296]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.04-06.46.52:956][296]LogExit: Preparing to exit.
+[2017.04.04-06.46.53:836][296]LogDirectoryWatcher: A directory notification for 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/' was aborted.
+[2017.04.04-06.46.53:854][296]LogExit: Editor shut down
+[2017.04.04-06.46.53:855][296]LogExit: Transaction tracking system shut down
+[2017.04.04-06.46.53:923][296]LogObj: Freed 0b from 0 cluster array pools.
+[2017.04.04-06.46.53:923][296]LogExit: Object subsystem successfully closed.
+[2017.04.04-06.46.53:941][296]LogD3D11RHI: Shutdown
+[2017.04.04-06.46.53:941][296]LogD3D11RHI: CleanupD3DDevice
+[2017.04.04-06.46.54:019][296]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.04.04-06.46.54:031][296]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (498)
+[2017.04.04-06.46.54:031][296]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (496)
+[2017.04.04-06.46.54:031][296]LogModuleManager: Shutting down and abandoning module CrashTracker (494)
+[2017.04.04-06.46.54:031][296]LogModuleManager: Shutting down and abandoning module AddContentDialog (492)
+[2017.04.04-06.46.54:031][296]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.15/FeaturePacks/' was aborted.
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module WidgetCarousel (491)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module EditorWidgets (488)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module CollectionManager (486)
+[2017.04.04-06.46.54:032][296]LogDirectoryWatcher: A directory notification for 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/Collections/' was aborted.
+[2017.04.04-06.46.54:032][296]LogDirectoryWatcher: A directory notification for 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/Developers/ENTJ/Collections/' was aborted.
+[2017.04.04-06.46.54:032][296]LogDirectoryWatcher: A directory notification for 'C:/CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Saved/Collections/' was aborted.
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module SceneOutliner (484)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module StatsViewer (482)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module FoliageEdit (480)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module LandscapeEditor (478)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (476)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module ActorPickerMode (474)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module GeometryMode (472)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module TextureAlignMode (470)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module BspMode (468)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module HardwareSurvey (466)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (464)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module AutomationWorker (462)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (460)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (458)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module PlacementMode (457)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (454)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (452)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module MfMediaFactory (450)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module MfMediaEditor (448)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (446)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (444)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (442)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module Media (441)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (438)
+[2017.04.04-06.46.54:032][296]LogModuleManager: Shutting down and abandoning module CharacterAI (436)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module AudioCapture (434)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module SequenceRecorder (433)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module SmartSnapping (430)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module SessionServices (428)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module ViewportSnapping (426)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module ViewportInteraction (424)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module LogVisualizer (422)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module IntroTutorials (420)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (419)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (416)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (414)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (412)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (410)
+[2017.04.04-06.46.54:033][296]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (409)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (406)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (404)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module InputBindingEditor (402)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module NiagaraEditor (400)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module MergeActors (398)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module SizeMap (396)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module TreeMap (394)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module ReferenceViewer (392)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (390)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module LocalizationService (389)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module HardwareTargeting (386)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (384)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module UndoHistory (382)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module UserFeedback (380)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module XmlParser (378)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module Blutility (376)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (374)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (373)
+[2017.04.04-06.46.54:669][296]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (370)
+[2017.04.04-06.46.54:670][296]LogModuleManager: Shutting down and abandoning module SettingsEditor (368)
+[2017.04.04-06.46.54:670][296]LogModuleManager: Shutting down and abandoning module ProjectLauncher (366)
+[2017.04.04-06.46.54:670][296]LogModuleManager: Shutting down and abandoning module SessionFrontend (364)
+[2017.04.04-06.46.54:670][296]LogModuleManager: Shutting down and abandoning module ProfilerClient (362)
+[2017.04.04-06.46.54:670][296]LogModuleManager: Shutting down and abandoning module DeviceManager (360)
+[2017.04.04-06.46.54:670][296]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (359)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module AutomationController (356)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module AutomationWindow (354)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module Layers (352)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (350)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module DetailCustomizations (348)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module PackagesDialog (346)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module Persona (344)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module AnimGraph (343)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module Kismet (340)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module GraphEditor (338)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module ClassViewer (336)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module Toolbox (334)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module ModuleUI (332)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module MovieSceneTools (330)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module OutputLog (328)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module GammaUI (326)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module Documentation (324)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module Niagara (322)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (320)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module AnalyticsET (318)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module PortalServices (316)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module PortalRpc (314)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module MessagingRpc (312)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module AIModule (310)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module GameplayDebugger (309)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module AITestSuite (307)
+[2017.04.04-06.46.54:711][296]LogModuleManager: Shutting down and abandoning module ProfilerService (304)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module TaskGraph (302)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module SteamVRController (300)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module SteamVR (298)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (296)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (294)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module OculusLibrary (292)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module OculusInput (290)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (288)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (286)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module CableComponent (284)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (282)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (278)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module HTML5Networking (276)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module AlembicImporter (274)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module AlembicLibrary (273)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module GeometryCache (272)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (271)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (266)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module SuperSearch (265)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (262)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module PluginBrowser (260)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (258)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module EpicSurvey (256)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (254)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module DesktopPlatform (253)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module UObjectPlugin (250)
+[2017.04.04-06.46.54:728][296]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (248)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (246)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module GitSourceControl (244)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module SourceControl (243)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (240)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (238)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (236)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module Paper2DEditor (234)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module MeshPaint (233)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module LevelEditor (231)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (230)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module MainFrame (228)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module HotReload (227)
+[2017.04.04-06.46.54:729][296]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.04.04-06.46.54:730][296]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (220)
+[2017.04.04-06.46.54:730][296]LogModuleManager: Shutting down and abandoning module PhysXVehicles (218)
+[2017.04.04-06.46.54:730][296]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (216)
+[2017.04.04-06.46.54:730][296]LogModuleManager: Shutting down and abandoning module UdpMessaging (214)
+[2017.04.04-06.46.54:832][296]LogModuleManager: Shutting down and abandoning module TcpMessaging (212)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (210)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (208)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module FacialAnimation (206)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (204)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module Paper2D (202)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (200)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module WmfMedia (198)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module MfMedia (196)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module MediaAssets (194)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (192)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module VREditor (190)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (188)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (186)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module FunctionalTesting (184)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (182)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module UMG (180)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module UMGEditor (179)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module Sequencer (178)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module AssetTools (176)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module MessageLog (175)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (174)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module SlateReflector (168)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module Slate (166)
+[2017.04.04-06.46.54:932][296]LogModuleManager: Shutting down and abandoning module EditorStyle (164)
+[2017.04.04-06.46.54:935][296]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (162)
+[2017.04.04-06.46.54:935][296]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (160)
+[2017.04.04-06.46.54:935][296]LogModuleManager: Shutting down and abandoning module XAudio2 (158)
+[2017.04.04-06.46.54:935][296]LogModuleManager: Shutting down and abandoning module Networking (156)
+[2017.04.04-06.46.54:935][296]LogModuleManager: Shutting down and abandoning module Core (152)
+[2017.04.04-06.46.54:935][296]LogModuleManager: Shutting down and abandoning module AssetRegistry (150)
+[2017.04.04-06.46.55:072][296]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.04.04-06.46.55:073][296]LogDirectoryWatcher: A directory notification for '../../../../../../CURSOS/VR_para_Arquitetura_parte_2/ArquiteturaVR_2_unr/Content/' was aborted.
+[2017.04.04-06.46.55:073][296]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (149)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module KismetCompiler (146)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module PhysXFormats (144)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module MeshUtilities (142)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (141)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (139)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (137)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module PropertyEditor (135)
+[2017.04.04-06.46.55:073][296]LogModuleManager: Shutting down and abandoning module DerivedDataCache (132)
+[2017.04.04-06.46.55:135][296]LogDerivedDataCache: Shutdown
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TargetPlatform (130)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (129)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (127)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (125)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (123)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (121)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (119)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (117)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (115)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (113)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module ImageWrapper (112)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (109)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (107)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (105)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (103)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (101)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (99)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (97)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (95)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (93)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module Messaging (91)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (89)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (87)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (85)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (83)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (81)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (79)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (77)
+[2017.04.04-06.46.55:135][296]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (75)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (73)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (71)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (69)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (67)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (65)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (63)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (61)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (59)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (57)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (55)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (53)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module InputCore (50)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module Settings (48)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module OculusRift (46)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (42)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2017.04.04-06.46.55:136][296]LogOnline:Display: Unloading online subsystem: NULL
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module XMPP (37)
+[2017.04.04-06.46.55:136][296]LogModuleManager: Shutting down and abandoning module HTTP (35)
+[2017.04.04-06.46.55:136][296]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.04.04-06.46.55:136][296]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B23AA9142-4976-ED3C-72C3-718814F5074C%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.15.0-3299760%2B%2B%2BUE4%2BRelease-4.15&UserID=23340a584aa1024b669ad684b09c30bb%7C058ed5be852e40be91482296a638b8cf%7C4e99113e-0cd2-449c-99c2-61486cecbbd5&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.04.04-06.46.55:159][296]LogModuleManager: Shutting down and abandoning module SSL (34)
+[2017.04.04-06.46.55:160][296]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.04.04-06.46.55:160][296]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.04.04-06.46.55:160][296]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.04.04-06.46.55:160][296]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.04.04-06.46.55:160][296]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.04.04-06.46.55:161][296]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.04.04-06.46.55:162][296]LogExit: Exiting.
+[2017.04.04-06.46.55:171][296]Log file closed, 04/04/17 03:46:55
